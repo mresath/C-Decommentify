@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-#define N 0 // Normal state
-#define SL 1 // In a single-line comment
-#define ML 2 // In a multi-line comment without a newline yet
-#define MLNL 3 //  In a multi-line comment with a newline
+enum State {
+    N, // Normal state
+    SL,  // Single-line comment
+    ML,  // Multi-line comment
+    MLNL  // Multi-line comment with newline in it
+};
 
 int main()
 {
