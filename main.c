@@ -49,15 +49,13 @@ int main()
                 state = MLNL;
                 putchar(c);
             }
-            if (c == '*' && (c = getchar()) == '/')
-            {
-                state = N;
-            }
-            break;
         case MLNL:
             if (c == '*' && (c = getchar()) == '/')
             {
                 state = N;
+                if ((c = getchar() == ' ')) {
+                    putchar('\t');
+                }
             }
             break;
         }

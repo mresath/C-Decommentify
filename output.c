@@ -6,10 +6,9 @@ int main()
     
 
     int b = 0; 
- int c = 0;
+	int c = 0;
 
     
-
 
     return 0;
 }
