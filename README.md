@@ -1,4 +1,4 @@
-# C De-commentify
+# C Decommentify
 
 This C program takes in another C program and removes all comments from it.
 
